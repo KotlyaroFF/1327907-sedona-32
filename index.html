@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <nav class="nav-header">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#">Главная</a></li>
+        <li class="nav-list-item"><a href="#">О Седоне</a> </li>
+        <li class="nav-list-item"><a href="#">Гостиицы</a></li>
+      </ul>
+      <figure class="header-logo">
+        <img src="img/nav-logo.svg" alt="Седона">
+      </figure>
+      <ui class="nav-serch-list">
+        <li class="nav-serch-list-item">
+          <span class="visually-hidden">Поиск</span>
+        </li>
+        <li class="nav-serch-list-item">
+          <span class="visually-hidden">Отложенные</span>
+        </li>
+        <li class="nav-serch-list-item">Хочу сюда</li>
+      </ui>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="index-about">
+      <figure class="index-about-figure">
+        <img class="index-adout-background" src="img/index-background.jpg" alt="">
+        <img class="index-about-logo" src="img/index-logo.svg" alt="Седона">
+        <img class="index-about-border" src="img/index-border.svg" alt="">
+      </figure>
+      <div class="index-about-text">
+        <h2 class="index-about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <span class="index-about-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+      </div>
+    </section>
+    <section class="index-info">
+      <div class="index-info-1">
+        <h3 class="index-info-title">Настоящий городок</h3>
+        <p class="index-info-nomber">— №1 —</p>
+        <p class="index-info-text">Седона — не аттракцион для туристов, там течёт  своя жизнь</p>
+      </div>
+      <div class="index-info-2">
+        <img class="index-info-img" src="img/index-info-photo-1.jpg" alt="Пейзаж города">
+      </div>
+      <div class="index-info-3">
+        <img class="index-info-icon" src="img/icon-house.svg" alt="Жильё">
+        <h3 class="index-info-title">Жильё</h3>
+        <p class="index-info-text">Рекомендуем пожить в настоящем мотеле,  всё как в кино!</p>
+      </div>
+      <div class="index-info-4">
+        <img class="index-info-icon" src="img/icon-food.svg" alt="Еда">
+        <h3 class="index-info-title">Еда</h3>
+        <p class="index-info-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="index-info-5">
+        <img class="index-info-icon" src="img/icon-present.svg" alt="Сувениры">
+        <h3 class="index-info-title">Сувениры</h3>
+        <p class="index-info-text">Не только китайского, но и настоящего местного производства!</p>
+      </div>
+      <div class="index-info-6">
+        <img class="index-info-img" src="img/index-info-photo-2.png" alt="Пейзаж каньёна">
+      </div>
+      <div class="index-info-7">
+        <h3 class="index-info-title">Там есть мост дьявола</h3>
+        <p class="index-info-nomber">— №2 —</p>
+        <p class="index-info-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+      </div>
+      <div class="index-info-8">
+        <h3 class="index-info-title">Небольшая площадь</h3>
+        <p class="index-info-nomber">— №3 —</p>
+        <p class="index-info-text">Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="index-info-9">
+        <h3 class="index-info-title">Красивая дорога</h3>
+        <p class="index-info-nomber">— №4 —</p>
+        <p class="index-info-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="index-info-10">
+        <h3 class="index-info-title">Мало туристов</h3>
+        <p class="index-info-nomber">— №5 —</p>
+        <p class="index-info-text">Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
+    </section>
+    <section class="main-serch">
+      <h2 class="main-serch-title">Заинтересовались?</h2>
+      <p class="main-serch-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="main-serch-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <section class="footer-subscribe">
+      <figure class="subscribe-figure">
+        <img class="subscribe-background" src="img/subscribe-background.jpg" alt="">
+      </figure>
+      <h2 class="subscribe-titel">Подпишитесь на рассылку</h2>
+      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="subscribe-form">
+        <input class="subscribe-form-text" type="email" id="useremail" name="useremail" placeholder="Ваш e-mail">
+        <label class="subscribe-form-lable" for="useremail">Подписаться</label>
+      </div>
+    </section>
+    <section class="footer-container">
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
+            <img src="img/logo-twitter.svg" width="20" height="20" alt="twitter">
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://www.facebook.com/htmlacademy">
+            <img src="img/logo-facebook.svg" width="20" height="20" alt="facebook">
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+            <img src="img/logo-youtube.svg" width="20" height="20" alt="youtube">
+          </a>
+        </li>
+      </ul>
+      <a class="contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="htmlacademy" href="https://htmlacademy.ru">
+        <img class="htmlacademy-logo" src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
+      </a>
+    </section>
+  </footer>
+
+</body>
+
 </html>
