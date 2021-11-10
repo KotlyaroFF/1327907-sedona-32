@@ -1,0 +1,344 @@
+:root {
+  --basic-dark: #333333;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --sedona-blue: rgb(170, 226, 240);
+  --cube-blue: #83B3D3;
+  --cube-opasity-12: rgba(131, 179, 211, 0.12);
+  --cube-opasity-2: rgba(131, 179, 211, 0.2);
+  --button-brown: #756257;
+  --border-grey: #E6E6E6;
+  --border-white-grey: #F2F2F2;
+
+}
+
+font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* general */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-align: center;
+  background-color: var(--basic-white)
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+
+}
+
+/* navigation */
+
+.nav-list {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.nav-serch-list-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* index */
+
+.index-about-figure {
+  color: var(--basic-black);
+  background-color: var(--sedona-blue);
+  background-image: url(/img/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.index-about-title,
+.main-serch-title,
+.subscribe-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.index-about-text,
+.main-serch-text,
+.subscribe-text {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+/* table */
+
+.index-info-container {
+  border: 2px solid #c47230;
+}
+
+.index-info-title{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.index-info-text,
+.index-info-nomber {
+  color: var(--basic-dark);
+  font: inherit;
+}
+
+.index-info-1,
+.index-info-7 {
+  color: var(--basic-white);
+  background-color: var(--cube-blue);
+}
+
+.index-info-3,
+.index-info-5,
+.index-info-8,
+.index-info-10 {
+  background-color: var(--cube-opasity-12);
+}
+
+.index-info-9 {
+  background-color: var(--cube-opasity-2);
+}
+
+/* /table */
+
+.main-serch-link {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: 20px;
+  line-height: 36px;
+  background-color: var(--button-brown);
+  border-radius: 10px;
+  border: 0 solid;
+}
+
+/* catalog */
+
+.catalog-form {
+  color: var(--basic-white);
+  background-color: var(--sedona-blue);
+
+
+  border: 2px solid #c47230;
+
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+
+  border: 2px solid #c47230;
+
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-filter-checkbox-name,
+.catalog-filter-radio-name {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-filter-input {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--cube-blue);
+  border-radius: 10px;
+  border: 0 solid;
+}
+
+.reset {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 20px;
+  background-color: none;
+  border-radius: 10px;
+  border: 0 solid;
+}
+
+.catalog-find {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-sort {
+  border-radius: 4px;
+  border: 2px solid var(--border-grey);
+}
+
+.button-sort:hover {
+  border-color: var(--basic-black);
+}
+
+/* product-card */
+
+.product-card-item {
+  border-top: 1px solid var(--border-grey);
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+}
+
+.product-card-text {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card-button-info {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--button-brown);
+  border: 0 solid;
+  border-radius: 4px;
+}
+
+.product-card-button-like {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--cube-blue);
+  border: 0 solid;
+  border-radius: 4px;
+}
+
+.product-card-rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: 0 solid;
+  border-radius: 4px;
+  background-color: var(--border-white-grey);
+}
+
+/* /product-card */
+
+/* pagination*/
+
+.pagination-show-more {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  border: 0 solid;
+  border-radius: 4px;
+  background-color: var(--cube-blue);
+  color: var(--basic-white);
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  border: 0 solid;
+  border-radius: 4px;
+  background-color: var(--cube-blue);
+  color: var(--basic-white);
+}
+
+.pagination-current {
+  background-color: var(--border-white-grey);
+  color: var(--basic-black);
+}
+
+.select {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--basic-dark);
+}
+
+/* /catalog */
+
+/* footer */
+
+.footer-subscribe {
+  color: var(--basic-white);
+  background-image: url(/img/subscribe-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: var(--sedona-blue);
+}
+
+.subscribe-form-link {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: 20px;
+  line-height: 26px;
+  background-color: var(--cube-blue);
+  border-radius: 0px 10px 10px 0px;
+  border: 0 solid;
+}
+
+.subscribe-form-text {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.contact-tel {
+  font-size: 40px;
+  line-height: 40px;
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,14 +20,21 @@
       </a>
       <ui class="nav-serch-list">
         <li class="nav-serch-list-item">
+          <a class="nav-serch-icon" href="#">
             <img class="nav-serch-icon" src="img/icon-nav-serch.svg" alt="Поиск">
-          <span class="visually-hidden">Поиск</span>
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
-        <li class="nav-serch-list-icon">
-          <img class="nav-serch-serch" src="img/icon-nav-heart.svg" alt="Отложенные">
-          <span class="visually-hidden">Отложенные</span>
+        <li class="nav-serch-list-item">
+          <a class="nav-serch-icon" href="#">
+            <img class="nav-serch-serch" src="img/icon-nav-heart.svg" alt="Поиск гостиницы в Седоне">
+            <span class="visually-hidden">Поиск гостиницы в Седоне</span>
+          </a>
         </li>
-        <li class="nav-serch-list-item">Хочу сюда</li>
+        <li class="nav-serch-list-item">
+          <a class="nav-serch-link" href="catalog.html">Хочу сюда</a>
+        </li>
+        </li>
       </ui>
     </nav>
   </header>
@@ -42,48 +50,48 @@
       </div>
     </section>
     <section class="index-info">
-      <div class="index-info-1">
+      <div class="index-info-1 index-info-container">
         <h3 class="index-info-title">Настоящий городок</h3>
         <p class="index-info-nomber">— №1 —</p>
         <p class="index-info-text">Седона — не аттракцион для туристов, там течёт  своя жизнь</p>
       </div>
-      <div class="index-info-2">
+      <div class="index-info-2 index-info-container" >
         <img class="index-info-img" src="img/index-info-photo-1.jpg" alt="Пейзаж города">
       </div>
-      <div class="index-info-3">
+      <div class="index-info-3 index-info-container">
         <img class="index-info-icon" src="img/icon-house.svg" alt="Жильё">
         <h3 class="index-info-title">Жильё</h3>
         <p class="index-info-text">Рекомендуем пожить в настоящем мотеле,  всё как в кино!</p>
       </div>
-      <div class="index-info-4">
+      <div class="index-info-4 index-info-container">
         <img class="index-info-icon" src="img/icon-food.svg" alt="Еда">
         <h3 class="index-info-title">Еда</h3>
         <p class="index-info-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
       </div>
-      <div class="index-info-5">
+      <div class="index-info-5 index-info-container">
         <img class="index-info-icon" src="img/icon-present.svg" alt="Сувениры">
         <h3 class="index-info-title">Сувениры</h3>
         <p class="index-info-text">Не только китайского, но и настоящего местного производства!</p>
       </div>
-      <div class="index-info-6">
+      <div class="index-info-6 index-info-container">
         <img class="index-info-img" src="img/index-info-photo-2.png" alt="Пейзаж каньёна">
       </div>
-      <div class="index-info-7">
+      <div class="index-info-7 index-info-container">
         <h3 class="index-info-title">Там есть мост дьявола</h3>
         <p class="index-info-nomber">— №2 —</p>
         <p class="index-info-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
       </div>
-      <div class="index-info-8">
+      <div class="index-info-8 index-info-container">
         <h3 class="index-info-title">Небольшая площадь</h3>
         <p class="index-info-nomber">— №3 —</p>
         <p class="index-info-text">Все достопримечательности находятся очень близко</p>
       </div>
-      <div class="index-info-9">
+      <div class="index-info-9 index-info-container">
         <h3 class="index-info-title">Красивая дорога</h3>
         <p class="index-info-nomber">— №4 —</p>
         <p class="index-info-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div class="index-info-10">
+      <div class="index-info-10 index-info-container">
         <h3 class="index-info-title">Мало туристов</h3>
         <p class="index-info-nomber">— №5 —</p>
         <p class="index-info-text">Большинство едет в Гранд Каньон и толпится там</p>
@@ -102,7 +110,8 @@
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form">
         <input class="subscribe-form-text" type="email" id="useremail" name="useremail" placeholder="Ваш e-mail">
-        <label class="subscribe-form-lable" for="useremail">Подписаться</label>
+        <label class="subscribe-form-lable" for="useremail">
+          <button class="subscribe-form-link" type="submit">Подписаться</button></label>
       </form>
     </section>
     <section class="footer-container">
